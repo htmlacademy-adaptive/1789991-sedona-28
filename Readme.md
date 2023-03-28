@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Alexandr Novickiy](https://up.htmlacademy.ru/adaptive/28/user/1789991).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
