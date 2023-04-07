@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Городок Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -36,7 +37,7 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Город в Аризоне - Седона</h1>
-    <div class="welcome__wrapper">
+    <div class="welcome">
       <img class="welcome__image" src="img/welcome-logo.svg" width="282" height="214" alt="Логотип городка Седона.">
     </div>
     <section class="advantages">
@@ -45,35 +46,35 @@
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__subtitle">Настоящий городок</h3>
-            <p class="advantages__description">Седона не аттракцион для туристов,u</p>
-            <div class="advantages__pack">
-              <img class="advantages__image" src="" alt="">
+            <div class="advantages__pack advantages__pack--first">
+              <h3 class="advantages__subtitle">Настоящий городок</h3>
+              <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <section class="service">
+            <img class="advantages__image" src="img/photo-city.jpg" width="320" height="260" alt="Фотография города.">
+            <section class="advantages__service service">
               <h2 class="visually-hidden">Сервис города</h2>
               <ul class="service__list">
                 <li class="service__item service__item--house">
                   <h3 class="service__subtitle">Жилье</h3>
                   <p class="service__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="service__item">
-                  <h3 class="service__subtitle service__item--food">Еда</h3>
+                <li class="service__item service__item--food">
+                  <h3 class="service__subtitle">Еда</h3>
                   <p class="service__description">Всегда заказывайте фирменный бургер, вы НЕ разочаруетесь!</p>
                 </li>
-                <li class="service__item">
-                  <h3 class="service__subtitle service__item--gift">Сувениры</h3>
+                <li class="service__item service__item--gift">
+                  <h3 class="service__subtitle">Сувениры</h3>
                   <p class="service__description">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </section>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__subtitle">Там есть мост дьявола</h3>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <div class="advantages__pack">
-              <img class="advantages__image" src="" alt="">
+              <h3 class="advantages__subtitle">Там есть мост дьявола</h3>
+              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
+              <img class="advantages__image" src="img/photo-bridge.jpg" width="320" height="260" alt="Фотография моста дьявола.">
           </li>
           <li class="advantages__item">
             <h3 class="advantages__subtitle">Небольшая площадь</h3>
@@ -98,6 +99,7 @@
     </section>
     <div class="map">
       <div class="map__wrapper">
+        <img class="map__image" src="img/terrain-map.png" width="320" height="350" alt="Карта рассположения города.">
         <button class="map__marker" type="button"></button>
       </div>
     </div>
