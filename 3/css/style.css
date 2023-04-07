@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/ptsans.woff2") format("woff2"), url("../../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/ptsansbold.woff2") format("woff2"), url("../../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.body {
+  height: 100%;
+  background-color: #807e7e;
+}
+.page__body {
+  margin: 0 auto;
+  width: 320px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.main-header {
+  position: relative;
+}
+.main-header__logo {
+  display: block;
+}
+.main-header__logo-image {
+  display: block;
+  margin: 0 auto;
+}
+.welcome {
+  background-color: #a7cbd5;
+  padding: 90px 0 85px;
+}
+.welcome__image {
+  display: block;
+  margin: 0 auto;
+}
+.advantages {
+  padding-top: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.advantages__slogan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 284px;
+  margin: 0 auto;
+}
+.advantages__intro {
+  width: 284px;
+  margin: 35px auto 32px;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__pack {
+  padding: 37px 18px;
+}
+.advantages__pack--first {
+  padding: 54px 0 40px;
+}
+.advantages__pack {
+  color: #ffffff;
+  background-color: #81B3D2;
+}
+.advantages__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 49px;
+}
+.service {
+  text-align: start;
+  background-color: #ffffff;
+}
+.service__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 65px;
+}
+.service__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.hotel-search {
+  padding: 38px 0 49px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hotel-search__title {
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.main-footer {
+  padding: 33px 0;
+  text-align: center;
+}
+.main-footer__tab {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.intro-case {
+  padding: 52px 0 67px;
+  background-color: #a7cbd5;
+}
+.intro-case__image {
+  display: block;
+  margin: 0 auto;
+}
+.feedback {
+  padding: 36px 20px 22px;
+  text-align: center;
+}
+.feedback__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.feedback__text {
+  margin: 24px 0 28px;
+  text-transform: uppercase;
+}
+.feedback-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.user-name__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.user-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.user-impress__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.visited-place__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.photo-gallery {
+  padding: 37px 20px 30px;
+}
+.photo-gallery__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.photo-gallery__text {
+  margin: 37px 0 27px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.photo-gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.video-content {
+  padding: 17px 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.video-content__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.video-content__text {
+  margin: 37px 0 38px;
+}
+.photo-gallery__description {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
