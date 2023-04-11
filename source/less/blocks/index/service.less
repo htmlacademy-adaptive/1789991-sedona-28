@@ -1,5 +1,6 @@
 .service {
-  text-align: start;
+  padding: 31px 18px 13px 65px;
+  text-align: left;
   background-color: #ffffff;
 }
 
@@ -7,9 +8,34 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 65px;
+}
+
+.service__item {
+  margin-bottom: 33px;
 }
 
 .service__subtitle {
   .heading;
+  margin: 0 0 16px;
+}
+
+.service__description {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .service {
+    padding: 0;
+  }
+
+  .service__list {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+  }
+
+  .service__item {
+    padding: 158px 33px 60px;
+    margin: 0;
+    text-align: center;
+  }
 }
