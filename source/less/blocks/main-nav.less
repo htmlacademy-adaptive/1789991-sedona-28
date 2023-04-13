@@ -6,6 +6,12 @@
   position: absolute;
   top: -79px;
   right: 20px;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icons/icon-menu.svg");
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
 .main-nav__wrapper {
@@ -22,12 +28,9 @@
   }
 
   .main-nav__list {
+    .reset-list;
     display: grid;
-    grid-template-columns: repeat(5, 153px);
-    width: 768px;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .main-nav__link {
