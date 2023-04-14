@@ -50,15 +50,15 @@
           <ul class="user-name__list">
             <li class="user-name__item">
               <label class="user-name__label" for="name">Имя*</label>
-              <input class="user-name__field" type="text" name="name" id="name" value="Пётр">
+              <input class="user-name__field field" type="text" name="name" id="name" value="Пётр">
             </li>
             <li class="user-name__item">
               <label class="user-name__label" for="surname">Фамилия*</label>
-              <input class="user-name__field" type="text" name="surname" id="surname" value="Пустота">
+              <input class="user-name__field field" type="text" name="surname" id="surname" value="Пустота">
             </li>
             <li class="user-name__item">
               <label class="user-name__label" for="patronymic">Отчество</label>
-              <input class="user-name__field" type="text" name="patronymic" id="patronymic" value="Викторович">
+              <input class="user-name__field field" type="text" name="patronymic" id="patronymic" value="Викторович">
             </li>
           </ul>
         </fieldset>
@@ -67,11 +67,11 @@
           <ul class="user-contacts__list">
             <li class="user-contacts__item">
               <label class="user-contacts__label" for="phone">Контактный телефон*:</label>
-              <input class="user-contacts__field user-contacts__field--phone" type="text" name="phone" id="phone" placeholder="Введите телефон">
+              <input class="user-contacts__field field user-contacts__field--phone" type="text" name="phone" id="phone" placeholder="Введите телефон">
             </li>
             <li class="user-contacts__item">
               <label class="user-contacts__label" for="email">Электронная почта*:</label>
-              <input class="user-contacts__field user-contacts__field--email" type="text" name="email" id="email" placeholder="Введите e-mail">
+              <input class="user-contacts__field field user-contacts__field--email" type="text" name="email" id="email" placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
@@ -80,19 +80,22 @@
           <ul class="user-impress__list">
             <li class="user-impress__item">
               <label class="user-impress__label">
-                <input class="user-impress__control" type="radio" name="impression" value="positive">
+                <input class="user-impress__control visually-hidden" type="radio" name="impression" value="positive" checked>
+                <span class="user-impress__mark"></span>
                 Скорее положительное
               </label>
             </li>
             <li class="user-impress__item">
               <label class="user-impress__label">
-                <input class="user-impress__control" type="radio" name="impression" value="negative">
+                <input class="user-impress__control visually-hidden" type="radio" name="impression" value="negative">
+                <span class="user-impress__mark"></span>
                 Скорее отрицательное
               </label>
             </li>
             <li class="user-impress__item">
               <label class="user-impress__label">
-                <input class="user-impress__control" type="radio" name="impression" value="difficult to answer">
+                <input class="user-impress__control visually-hidden" type="radio" name="impression" value="difficult to answer">
+                <span class="user-impress__mark"></span>
                 Затрудняюсь ответить
               </label>
             </li>
@@ -103,27 +106,31 @@
           <ul class="visited-place__list">
             <li class="visited-place__item">
               <label class="visited-place__label">
-                <input class="visited-place__contol" type="checkbox" name="places visited" value="Devil's Bridge"
+                <input class="visited-place__contol visually-hidden" type="checkbox" name="places visited" value="Devil's Bridge"
                   checked>
+                <span class="visited-place__mark"></span>
                 Мост Дьявола
               </label>
             </li>
             <li class="visited-place__item">
               <label class="visited-place__label">
-                <input class="visited-place__contol" type="checkbox" name="places visited" value="The Bell Mountain"
+                <input class="visited-place__contol visually-hidden" type="checkbox" name="places visited" value="The Bell Mountain"
                   checked>
+                <span class="visited-place__mark"></span>
                 Гора-Колокол
               </label>
             </li>
             <li class="visited-place__item">
               <label class="visited-place__label">
-                <input class="visited-place__contol" type="checkbox" name="places visited" value="Slide Park" checked>
+                <input class="visited-place__contol visually-hidden" type="checkbox" name="places visited" value="Slide Park" checked>
+                <span class="visited-place__mark"></span>
                 Слайд-парк
               </label>
             </li>
             <li class="visited-place__item">
               <label class="visited-place__label">
-                <input class="visited-place__contol" type="checkbox" name="places visited" value="Red Rocks">
+                <input class="visited-place__contol visually-hidden" type="checkbox" name="places visited" value="Red Rocks">
+                <span class="visited-place__mark"></span>
                 Красные скалы
               </label>
             </li>
@@ -131,11 +138,13 @@
         </fieldset>
         <fieldset class="feedback__group-form user-emotions">
           <legend class="feedback__subtitle">Опишите свои эмоции:</legend>
-          <input class="user-emotions__field" type="text" name="user emotions"
+          <input class="user-emotions__field field" type="text" name="user emotions"
             placeholder="Опишите подробно все свои восторги">
         </fieldset>
-        <button class="feedback-form__button" type="submit">Отправить отзыв</button>
-        <p class="feedback-form__remark">* — обязательные поля</p>
+        <div class="feedback__frame">
+          <button class="feedback__button-submit button" type="submit">Отправить отзыв</button>
+          <p class="feedback__remark">* — обязательные поля</p>
+        </div>
       </form>
     </section>
     </div>
