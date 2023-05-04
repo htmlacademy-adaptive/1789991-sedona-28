@@ -1,0 +1,19 @@
+.radio-marker {
+  display: block;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.feedback-form__control:checked + .radio-marker::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+}

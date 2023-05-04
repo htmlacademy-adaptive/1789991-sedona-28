@@ -1,12 +1,21 @@
 .main-footer {
-  padding: 33px 0;
+  padding: 33px 0 34px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 36px 60px;
+  }
 }
 
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .main-footer__tab {
@@ -14,23 +23,9 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-}
 
-@media (min-width: @tablet-width) {
-  .main-footer {
-    padding: 36px 60px;
-  }
-
-  .main-footer__wrapper {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .main-footer__social {
-    margin: auto;
-  }
-
-  .main-footer__tab {
+  @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
+

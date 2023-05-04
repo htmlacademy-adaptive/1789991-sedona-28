@@ -1,0 +1,22 @@
+.form-list {
+  .reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form-list--radio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 36px;
+  }
+
+  .form-list--checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin: 0 84px;
+  }
+}
