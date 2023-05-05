@@ -2,34 +2,67 @@
   padding: 23px 18px 13px;
   text-align: left;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    grid-column: ~"1/-1";
+    padding: 0;
+  }
 }
 
 .service__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .service__item {
   margin-bottom: 25px;
   padding: 8px 0 0 47px;
 
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    text-align: center;
+  }
+
   &--house {
     background-image: url("../img/icons/icon-house.svg");
     background-repeat: no-repeat;
     background-size: 40px 40px;
+
+    @media (min-width: @tablet-width) {
+      padding: 158px 33px 60px;
+      background-position: center top 60px;
+      background-size: 77px 72px;
+    }
   }
 
   &--food {
     background-image: url("../img/icons/icon-burger.svg");
     background-repeat: no-repeat;
     background-size: 40px 40px;
+
+    @media (min-width: @tablet-width) {
+      padding: 156px 33px 61px;
+      background-position: center top 62px;
+      background-size: 80px 68px;
+    }
   }
 
   &--gift {
     background-image: url("../img/icons/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: 40px 40px;
+
+    @media (min-width: @tablet-width) {
+      padding: 153px 33px 64px;
+      background-position: center top 64px;
+      background-size: 66px 75px;
+    }
   }
 }
 
@@ -40,38 +73,4 @@
 
 .service__description {
   margin: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .service {
-    padding: 0;
-  }
-
-  .service__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .service__item {
-    margin: 0;
-    text-align: center;
-
-    &--house {
-      padding: 158px 33px 60px;
-      background-position: center top 60px;
-      background-size: 77px 72px;
-    }
-
-    &--food {
-      padding: 156px 33px 61px;
-      background-position: center top 62px;
-      background-size: 80px 68px;
-    }
-
-    &--gift {
-      padding: 153px 33px 64px;
-      background-position: center top 64px;
-      background-size: 66px 75px;
-    }
-  }
 }

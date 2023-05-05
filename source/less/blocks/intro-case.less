@@ -2,11 +2,29 @@
   position: relative;
   background-color: #a7cbd5;
   height: 158px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 57px;
+    background: url(../img/welcome-triangle.png) no-repeat center bottom;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
 }
 
 .intro-case__background {
   display: block;
   width: 100%;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
 }
 
 .intro-case__image {
@@ -15,4 +33,8 @@
   right: 0;
   left: 0;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    top: 95px;
+  }
 }

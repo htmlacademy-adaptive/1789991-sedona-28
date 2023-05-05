@@ -1,0 +1,31 @@
+.like-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.like-rating__button {
+  padding: 0;
+  border: none;
+  margin: 0 14px 0 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.like-rating__icon {
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+
+.like-rating__counter {
+  font-weight: 700;
+}
