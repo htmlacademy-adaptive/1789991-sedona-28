@@ -6,8 +6,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео городка Седона</title>
-  <link rel="icon" type="image/png" href="img/icons/favicon.png">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -53,8 +55,12 @@
           политике и экономике.</p>
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="img/photo-gallery-1.jpg" width="280" height="280"
-              alt="Фото дороги к городу.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="photo-gallery__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                width="280" height="280" alt="Фото дороги к городу.">
+            </picture>
             <div class="photo-gallery__container">
               <div class="photo-gallery__wrapper">
                 <p class="photo-gallery__description">Неродные просторы</p>
@@ -73,8 +79,12 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="img/photo-gallery-2.jpg" width="280" height="280"
-              alt="Фото местной растительности.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="photo-gallery__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                width="280" height="280" alt="Фото местной растительности.">
+            </picture>
             <div class="photo-gallery__container">
               <div class="photo-gallery__wrapper">
                 <p class="photo-gallery__description">Местная растительность</p>
@@ -93,8 +103,12 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="img/photo-gallery-3.jpg" width="280" height="280"
-              alt="Вид сверху дороги на север.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="photo-gallery__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                width="280" height="280" alt="Вид сверху дороги на север.">
+            </picture>
             <div class="photo-gallery__container photo-gallery__container--other-color">
               <div class="photo-gallery__wrapper">
                 <p class="photo-gallery__description">Дорога на север</p>
@@ -113,8 +127,12 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="img/photo-gallery-4.jpg" width="280" height="280"
-              alt="Фото моста дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="photo-gallery__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                width="280" height="280" alt="Фото моста дьявола.">
+            </picture>
             <div class="photo-gallery__container">
               <div class="photo-gallery__wrapper">
                 <p class="photo-gallery__description">Мост дьявола</p>
@@ -139,8 +157,15 @@
         <p class="video-content__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной
           раз!</p>
-        <img class="video-content__image" src="../img/video-gallery.jpg" width="280" height="177"
-          alt="Видео поездки в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/video-gallery-desktop@1x.jpg 1x, img/video-gallery-desktop@2x.jpg 2x" width="800" height="500">
+          <source media="(min-width: 768px)"
+            srcset="img/video-gallery-tablet@1x.jpg 1x, img/video-gallery-tablet@2x.jpg 2x" width="648" height="500">
+          <img class="video-content__image" src="img/video-gallery-mobile@1x.jpg" srcset="img/video-gallery-mobile@2x.jpg 2x"
+             width="280" height="177"
+            alt="Видео поездки в Седону.">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
