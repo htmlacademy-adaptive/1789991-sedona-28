@@ -1,0 +1,35 @@
+.field-text {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 16px;
+  width: 100%;
+  border: none;
+
+  &--phone {
+    padding-right: 70px;
+    background: url("../img/icons/field-phone-icon.svg") no-repeat right;
+    background-color: #f2f2f2;
+    background-size: 58px 58px;
+  }
+
+  &--email {
+    padding-right: 70px;
+    background: url("../img/icons/field-email-icon.svg") no-repeat right;
+    background-color: #f2f2f2;
+    background-size: 58px 58px;
+  }
+
+  &--textarea {
+    resize: none;
+    max-width: 768px;
+    height: 150px;
+  }
+}
+
+.field-text::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+

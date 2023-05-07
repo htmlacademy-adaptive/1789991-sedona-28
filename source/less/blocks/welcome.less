@@ -1,0 +1,42 @@
+.welcome {
+  position: relative;
+  background-color: #a7cbd5;
+  height: 389px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background: url(../img/welcome-triangle.svg) no-repeat 50% 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
+}
+
+.welcome__background {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
+}
+
+.welcome__logo {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
