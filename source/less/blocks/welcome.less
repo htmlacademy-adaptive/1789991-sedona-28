@@ -1,16 +1,15 @@
 .welcome {
   position: relative;
   background-color: #a7cbd5;
-  position: relative;
   height: 389px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     width: 100%;
     height: 57px;
-    background: url(../img/welcome-triangle.png) no-repeat center bottom;
+    background: url(../img/welcome-triangle.svg) no-repeat 50% 100%;
   }
 
   @media (min-width: @tablet-width) {
@@ -28,11 +27,16 @@
   }
 }
 
-.welcome__image {
+.welcome__logo {
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }

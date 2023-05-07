@@ -6,6 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео городка Седона</title>
+  <link rel="icon" type="image/png" href="img/icons/favicon.png">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -38,8 +40,12 @@
     </header>
     <main class="main-container">
       <div class="intro-case">
-        <img class="intro-case__background" src="img/background-form.jpg" width="320" height="158" alt="Вид на горы.">
-        <img class="intro-case__image" src="img/intro-sedona.svg" width="229" height="39" alt="Логотип Седона.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/form-back-desktop@1x.jpg 1x, img/form-back-desktop@2x.jpg 2x">
+          <img class="intro-case__background" src="img/form-back-mobile@1x.jpg" srcset="img/form-back-mobile@2x.jpg 2x"
+            width="320" height="158" alt="Красивый вид на горы.">
+        </picture>
+        <img class="intro-case__logo" src="img/intro-sedona.svg" width="229" height="39" alt="Логотип Седона.">
       </div>
       <section class="photo-gallery">
         <h1 class="photo-gallery__title">Фото и видео</h1>
