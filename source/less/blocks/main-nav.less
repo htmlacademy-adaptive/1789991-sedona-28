@@ -10,6 +10,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
     &::after {
       content: "";
       grid-column: ~"3/4";
@@ -35,52 +36,53 @@
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.2);
-
-      &:hover {
-        background-color: #669ec0;
-      }
-
-      &:active {
-        color: rgba(255, 255, 255, 0.3);
-        background-color: #5496bd;
-      }
-
-      @media (min-width: @tablet-width){
-        padding: 17px 3px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 21px;
-        color: #000000;
-        box-shadow: none;
-
-        &:hover {
-          background-color: inherit;
-          opacity: 0.6;
-        }
-
-        &:focus {
-          outline-offset: -1px;
-        }
-
-        &:active {
-          background-color: inherit;
-          color: #000000;
-          opacity: 0.3;
-        }
-      }
-}
-
-.main-nav__link--active {
-  color: #766357;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   &:hover {
-    opacity: 1;
+    background-color: #669ec0;
   }
 
   &:active {
-    opacity: 1;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 17px 3px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    box-shadow: none;
+
+    &:hover {
+      background-color: inherit;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline-offset: -1px;
+    }
+
+    &:active {
+      background-color: inherit;
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__link--active {
+  @media (min-width: @tablet-width) {
+    color: #766357;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }
 
@@ -116,8 +118,8 @@
   width: 22px;
   height: 22px;
   z-index: 15;
-  background-color: #81b3d2;
-  background-image: url(../img/icons/icon-nav-cross.svg);
+  background-color: inherit;
+  background-image: url("../img/icons/icon-nav-cross.svg");
 }
 
 @media (max-width: @mobile-width-only) {
@@ -153,5 +155,3 @@
     display: none;
   }
 }
-
-
