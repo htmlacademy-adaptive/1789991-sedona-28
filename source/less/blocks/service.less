@@ -1,5 +1,5 @@
 .service {
-  padding: 23px 18px 13px;
+  padding: 23px 18px 20px;
   text-align: left;
   background-color: #ffffff;
 
@@ -35,9 +35,14 @@
     background-size: 40px 40px;
 
     @media (min-width: @tablet-width) {
-      padding: 158px 33px 60px;
-      background-position: center top 60px;
+      padding: 156px 33px 60px;
+      background-position: center top 58px;
       background-size: 77px 72px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 169px 33px 60px;
+      background-position: center top 69px;
     }
   }
 
@@ -47,9 +52,14 @@
     background-size: 40px 40px;
 
     @media (min-width: @tablet-width) {
-      padding: 156px 33px 61px;
-      background-position: center top 62px;
+      padding: 154px 33px 61px;
+      background-position: center top 60px;
       background-size: 80px 68px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 165px 33px 61px;
+      background-position: center top 71px;
     }
   }
 
@@ -59,9 +69,16 @@
     background-size: 40px 40px;
 
     @media (min-width: @tablet-width) {
-      padding: 153px 33px 64px;
+      padding: 151px 33px 64px;
       background-position: center top 64px;
       background-size: 66px 75px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url(../../img/icons/icon-gift-desktop.svg);
+      padding: 170px 66px 66px;
+      background-position: center top 69px;
+      background-size: 77px 75px;
     }
   }
 }
@@ -69,8 +86,17 @@
 .service__subtitle {
   .heading;
   margin: 0 0 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .service__description {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
