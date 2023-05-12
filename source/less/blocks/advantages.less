@@ -1,10 +1,14 @@
 .advantages {
-  padding-top: 32px;
+  padding-top: 34px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     padding-top: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 59px;
   }
 }
 
@@ -13,9 +17,10 @@
   display: inline-block;
   max-width: 520px;
   margin: 0 18px 35px;
+  line-height: 27px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 35px;
+    margin: 0 0 29px;
   }
 }
 
@@ -25,19 +30,35 @@
   @media (min-width: @tablet-width) {
     margin: 0 0 56px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .advantages__pack {
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding: 37px 18px;
-
-  &--first {
-    padding: 70px 0 40px;
-  }
 
   @media (min-width: @tablet-width) {
     padding: 52px 33px 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 72px 31px;
+  }
+
+  &--first {
+    padding: 70px 18px 39px;
+
+    @media (min-width: @tablet-width) {
+      padding: 52px 18px 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 52px 55px 39px;
+    }
   }
 }
 
@@ -58,7 +79,7 @@
   left: 0;
   width: 100%;
   height: 37px;
-  background: url(../img/triangle-advantages.svg) no-repeat center top;
+  background: url("../img/triangle-advantages.svg") no-repeat center top;
 
   @media (min-width: @tablet-width) {
     content: none;
@@ -73,39 +94,51 @@
 
 .advantages__subtitle {
   .heading;
-  margin: 0 0 17px;
+  margin: 0 0 12px;
 
   @media (min-width: @tablet-width) {
     width: 150px;
-    margin: 0 auto 17px;
+    margin: 0 auto 14px;
   }
 }
 
 .advantages__number {
   display: block;
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description {
-  margin: 0 18px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-  }
+  margin: 0;
 }
 
 .advantages__item--grey {
-  padding: 24px 0;
+  padding: 24px 33px 23px;
   background-color: #eeeeee;
   border-bottom: 1px solid #d6d6d6;
-
-  &:last-child {
-    border: none;
-  }
 
   @media (min-width: @tablet-width) {
     padding: 41px 33px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 53px 33px;
+  }
+
+  &:last-child {
+    border: none;
+    padding-bottom: 28px;
+  }
+
+  &:nth-child(4) {
+    @media (min-width: @tablet-width) {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
   }
 }
 
@@ -131,4 +164,3 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-

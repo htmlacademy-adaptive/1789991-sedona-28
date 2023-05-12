@@ -6,3 +6,30 @@
   background-color: #f2f2f2;
   border-radius: 4px;
 }
+
+.label-form:hover .checkbox-marker {
+  background-color: #e5e5e5;
+}
+
+.form-list__control:focus + .checkbox-marker {
+  outline: 2px solid #999595;
+}
+
+.label-form:active .checkbox-marker {
+  background-color: #d5d5d5;
+}
+
+.label-form:active .checkbox-marker::before {
+  opacity: 0.3;
+}
+
+.form-list__control[type="checkbox"]:checked + .checkbox-marker::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  left: 12px;
+  top: 15px;
+  background-color: #333333;
+  mask-image: url("../img/icons/tick-form.svg");
+}
