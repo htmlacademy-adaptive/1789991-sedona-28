@@ -71,13 +71,13 @@
   margin: 0 auto;
   min-width: 320px;
   max-width: 1200px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 .main-header {
   position: relative;
@@ -137,7 +137,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .main-nav__link:hover {
   background-color: #669ec0;
@@ -168,14 +168,16 @@
     opacity: 0.3;
   }
 }
-.main-nav__link--active {
-  color: #766357;
-}
-.main-nav__link--active:hover {
-  opacity: 1;
-}
-.main-nav__link--active:active {
-  opacity: 1;
+@media (min-width: 768px) {
+  .main-nav__link--active {
+    color: #766357;
+  }
+  .main-nav__link--active:hover {
+    opacity: 1;
+  }
+  .main-nav__link--active:active {
+    opacity: 1;
+  }
 }
 .main-nav__toggle {
   position: absolute;
@@ -206,8 +208,8 @@
   width: 22px;
   height: 22px;
   z-index: 15;
-  background-color: #81b3d2;
-  background-image: url(../img/icons/icon-nav-cross.svg);
+  background-color: inherit;
+  background-image: url("../img/icons/icon-nav-cross.svg");
 }
 @media (max-width: 767px) {
   .main-nav--opened .main-nav__list,
@@ -250,7 +252,7 @@
   bottom: 0;
   width: 100%;
   height: 57px;
-  background: url(../img/welcome-triangle.svg) no-repeat 50% 100%;
+  background: url("../img/welcome-triangle.svg") no-repeat 50% 100%;
 }
 @media (min-width: 768px) {
   .welcome {
@@ -331,7 +333,7 @@
 }
 .advantages__pack {
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding: 37px 18px;
 }
 @media (min-width: 768px) {
@@ -376,7 +378,7 @@
   left: 0;
   width: 100%;
   height: 37px;
-  background: url(../img/triangle-advantages.svg) no-repeat center top;
+  background: url("../img/triangle-advantages.svg") no-repeat center top;
 }
 @media (min-width: 768px) {
   .advantages__list::before {
@@ -544,7 +546,7 @@
 }
 @media (min-width: 1200px) {
   .service__item--gift {
-    background-image: url(../../img/icons/icon-gift-desktop.svg);
+    background-image: url("../img/icons/icon-gift-desktop.svg");
     padding: 170px 66px 66px;
     background-position: center top 69px;
     background-size: 77px 75px;
@@ -752,7 +754,7 @@
   bottom: -1px;
   width: 100%;
   height: 57px;
-  background: url(../../img/welcome-triangle.svg) no-repeat 50% 100%;
+  background: url("../../img/welcome-triangle.svg") no-repeat 50% 100%;
 }
 .intro-case__background {
   position: absolute;
@@ -842,7 +844,7 @@
 }
 .feedback-form {
   padding: 24px 0 0;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
 }
 @media (min-width: 768px) {
   .feedback-form {
@@ -864,8 +866,8 @@
     width: 1px;
     height: 338px;
     background-color: #dbdbdb;
-    left: calc(50% - 1px/2);
-    top: calc(50% - 338px/2);
+    left: calc(50% - 1px / 2);
+    top: calc(50% - 338px / 2);
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
@@ -879,7 +881,7 @@
   margin: 0 0 24px;
   padding: 0 20px 24px;
   border: none;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
 }
 @media (min-width: 768px) {
   .feedback-form__group {
@@ -1167,8 +1169,8 @@
   left: 12px;
   top: 15px;
   background-color: #333333;
-  -webkit-mask-image: url(../../img/icons/tick-form.svg);
-          mask-image: url(../../img/icons/tick-form.svg);
+  -webkit-mask-image: url("../img/icons/tick-form.svg");
+          mask-image: url("../img/icons/tick-form.svg");
 }
 .photo-gallery {
   padding: 38px 0 0;
