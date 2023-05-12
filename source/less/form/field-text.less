@@ -8,6 +8,17 @@
   width: 100%;
   border: none;
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+
   &--phone {
     padding-right: 70px;
     background: url("../img/icons/field-phone-icon.svg") no-repeat right;

@@ -25,25 +25,6 @@
   }
 }
 
-.main-nav--opened .main-nav__list {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  z-index: 10;
-  background-color: #81b3d2;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 7px;
-    width: 100%;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-  }
-}
-
 .main-nav__link {
   padding: 17px 52px 12px;
   display: block;
@@ -57,18 +38,50 @@
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
       inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 
+      &:hover {
+        background-color: #669ec0;
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #5496bd;
+      }
+
       @media (min-width: @tablet-width){
-        padding: 18px 0 17px;
+        padding: 17px 3px;
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
         color: #000000;
         box-shadow: none;
 
-        &--active {
-          color: #766357;
+        &:hover {
+          background-color: inherit;
+          opacity: 0.6;
+        }
+
+        &:focus {
+          outline-offset: -1px;
+        }
+
+        &:active {
+          background-color: inherit;
+          color: #000000;
+          opacity: 0.3;
         }
       }
+}
+
+.main-nav__link--active {
+  color: #766357;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .main-nav__toggle {
@@ -81,6 +94,18 @@
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -96,12 +121,9 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .main-nav__list {
-    display: none;
-  }
-
+  .main-nav--opened .main-nav__list,
   .main-nav--nojs .main-nav__list {
-    position: relative;
+    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -117,6 +139,14 @@
       bottom: 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
     }
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: relative;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
   }
 
   .main-nav--nojs .main-nav__toggle {

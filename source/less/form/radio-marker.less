@@ -7,7 +7,23 @@
   border-radius: 50%;
 }
 
-.feedback-form__control:checked + .radio-marker::before {
+.label-form:hover .radio-marker {
+  background-color: #e5e5e5;
+}
+
+.form-list__control:focus + .radio-marker {
+  outline: 2px solid #999595;
+}
+
+.label-form:active .radio-marker {
+  background-color: #d5d5d5;
+}
+
+.label-form:active .radio-marker::before {
+  opacity: 0.3;
+}
+
+.form-list__control:checked + .radio-marker::before {
   content: "";
   position: absolute;
   width: 16px;
