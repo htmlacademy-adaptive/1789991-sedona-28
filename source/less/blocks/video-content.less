@@ -46,7 +46,40 @@
   }
 }
 
+.video-content__video {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
 .video-content__image {
   display: block;
-  margin: 0 auto;
+}
+
+.video-content__button {
+  position: absolute;
+  left: calc(50% - 48px / 2);
+  top: calc(50% - 54px / 2);
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video-content__arrow {
+  &:hover {
+    fill-opacity: 0.9;
+  }
+
+  &:active {
+    fill-opacity: 0.5;
+  }
 }
