@@ -42,6 +42,8 @@
     <main class="main-container">
       <div class="intro-case">
         <picture>
+          <source media="(min-width: 768px)" srcset="img/form-back-desktop@1x.webp 1x, img/form-back-desktop@2x.webp 2x">
+          <source srcset="img/form-back-mobile@1x.webp 1x, img/form-back-mobile@2x.webp 2x">
           <source media="(min-width: 768px)" srcset="img/form-back-desktop@1x.jpg 1x, img/form-back-desktop@2x.jpg 2x">
           <img class="intro-case__background" src="img/form-back-mobile@1x.jpg" srcset="img/form-back-mobile@2x.jpg 2x"
             width="320" height="158" alt="Красивый вид на горы.">
@@ -60,12 +62,12 @@
                 <ul class="feedback-form__list form-list">
                   <li class="form-list__item">
                     <label class="form-list__label label-form" for="name">Имя*</label>
-                    <input class="form-list_field field-text" type="text" name="name" id="name" value="Пётр">
+                    <input class="form-list_field field-text" type="text" name="name" id="name" value="Пётр" required>
                   </li>
                   <li class="form-list__item">
                     <label class="form-list__label label-form" for="surname">Фамилия*</label>
                     <input class="form-list__field field-text" type="text" name="surname" id="surname"
-                      value="Пустота">
+                      value="Пустота" required>
                   </li>
                   <li class="form-list__item">
                     <label class="form-list__label label-form" for="patronymic">Отчество</label>
@@ -80,17 +82,17 @@
                   <li class="form-list__item">
                     <label class="form-list__label label-form" for="phone">Контактный телефон*:</label>
                     <input class="form-list__field field-text field-text--phone" type="tel" name="phone" id="phone"
-                      placeholder="Введите телефон">
+                      placeholder="Введите телефон" required>
                   </li>
                   <li class="form-list__item">
                     <label class="form-list__label label-form" for="email">Электронная почта*:</label>
                     <input class="form-list__field field-text field-text--email" type="email" name="email"
-                      id="email" placeholder="Введите e-mail">
+                      id="email" placeholder="Введите e-mail" required>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="feedback-form__group">
+            <fieldset class="feedback-form__group feedback-form__group--line">
               <legend class="feedback-form__subtitle feedback-form__subtitle--accend">Ваше общее впечатление:</legend>
               <ul class="feedback-form__list form-list form-list--radio">
                 <li class="form-list__item form-list__item--radio">
@@ -119,8 +121,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="feedback-form__group">
-              <legend class="feedback-form__subtitle feedback-form__subtitle--accend">Посещенные достопримечательности:
+            <fieldset class="feedback-form__group feedback-form__group--line">
+              <legend class="feedback-form__subtitle feedback-form__subtitle--accend">Посещенные<br>достопримечательности:
               </legend>
               <ul class="feedback-form__list form-list form-list--checkbox">
                 <li class="form-list__item form-list__item--checkbox">
@@ -157,7 +159,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="feedback-form__group feedback-form__group--emotion">
+            <fieldset class="feedback-form__group feedback-form__group--emotion feedback-form__group--line">
               <legend class="feedback-form__subtitle feedback-form__subtitle--accend">Опишите свои эмоции:</legend>
               <textarea class="feedback-form__field field-text field-text--textarea" name="user emotions"
                 placeholder="Опишите подробно все свои восторги"></textarea>

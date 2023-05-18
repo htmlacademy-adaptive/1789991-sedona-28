@@ -77,6 +77,17 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .photo-gallery__item {
+    padding: 24px 20px 27px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
+  }
+}
+
+
 .photo-gallery__image {
   display: block;
   margin: 0 auto;

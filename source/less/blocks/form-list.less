@@ -12,7 +12,9 @@
 
   @media (min-width: @tablet-width) {
     &--radio {
+      box-sizing: border-box;
       width: 280px;
+      padding-right: 25px;
     }
 
     &--checkbox {
@@ -22,7 +24,8 @@
 
   @media (min-width: @desktop-width) {
     &--radio:nth-child(3n) {
-      width: auto;
+      padding: 0;
+      width: 238px;
     }
 
     &--checkbox {
