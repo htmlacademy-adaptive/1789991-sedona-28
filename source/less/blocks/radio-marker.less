@@ -7,6 +7,10 @@
   border-radius: 50%;
 }
 
+.label-form--radio [class] {
+  cursor: pointer;
+}
+
 .label-form:hover .radio-marker {
   background-color: #e5e5e5;
 }
@@ -20,6 +24,11 @@
 }
 
 .label-form:active .radio-marker::before {
+  opacity: 0.3;
+}
+
+.form-list__control:disabled ~ [class] {
+  cursor: default;
   opacity: 0.3;
 }
 

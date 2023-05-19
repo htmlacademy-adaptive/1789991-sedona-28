@@ -61,16 +61,16 @@
                 <legend class="feedback-form__subtitle">Представьтесь:</legend>
                 <ul class="feedback-form__list form-list">
                   <li class="form-list__item">
-                    <label class="form-list__label label-form" for="name">Имя*</label>
+                    <label class="form-list__label label-form label-form--text" for="name">Имя*</label>
                     <input class="form-list_field field-text" type="text" name="name" id="name" value="Пётр" required>
                   </li>
                   <li class="form-list__item">
-                    <label class="form-list__label label-form" for="surname">Фамилия*</label>
+                    <label class="form-list__label label-form label-form--text" for="surname">Фамилия*</label>
                     <input class="form-list__field field-text" type="text" name="surname" id="surname"
                       value="Пустота" required>
                   </li>
                   <li class="form-list__item">
-                    <label class="form-list__label label-form" for="patronymic">Отчество</label>
+                    <label class="form-list__label label-form label-form--text" for="patronymic">Отчество</label>
                     <input class="form-list__field field-text" type="text" name="patronymic" id="patronymic"
                       value="Викторович">
                   </li>
@@ -80,12 +80,12 @@
                 <legend class="feedback-form__subtitle">Контактная информация:</legend>
                 <ul class="feedback-form__list form-list">
                   <li class="form-list__item">
-                    <label class="form-list__label label-form" for="phone">Контактный телефон*:</label>
+                    <label class="form-list__label label-form label-form--text" for="phone">Контактный телефон*:</label>
                     <input class="form-list__field field-text field-text--phone" type="tel" name="phone" id="phone"
                       placeholder="Введите телефон" required>
                   </li>
                   <li class="form-list__item">
-                    <label class="form-list__label label-form" for="email">Электронная почта*:</label>
+                    <label class="form-list__label label-form label-form--text" for="email">Электронная почта*:</label>
                     <input class="form-list__field field-text field-text--email" type="email" name="email"
                       id="email" placeholder="Введите e-mail" required>
                   </li>
@@ -100,7 +100,7 @@
                     <input class="form-list__control visually-hidden" type="radio" name="impression"
                       value="positive" checked>
                     <span class="form-list__mark radio-marker"></span>
-                    Скорее положительное
+                    <p class="form-list__label-text">Скорее положительное</p>
                   </label>
                 </li>
                 <li class="form-list__item form-list__item--radio">
@@ -108,7 +108,7 @@
                     <input class="form-list__control visually-hidden" type="radio" name="impression"
                       value="negative">
                     <span class="form-list__mark radio-marker"></span>
-                    Скорее отрицательное
+                    <p class="form-list__label-text">Скорее отрицательное</p>
                   </label>
                 </li>
                 <li class="form-list__item form-list__item--radio">
@@ -116,7 +116,7 @@
                     <input class="form-list__control visually-hidden" type="radio" name="impression"
                       value="difficult to answer">
                     <span class="form-list__mark radio-marker"></span>
-                    Затрудняюсь ответить
+                    <p class="form-list__label-text">Затрудняюсь ответить</p>
                   </label>
                 </li>
               </ul>
@@ -130,7 +130,7 @@
                     <input class="form-list__control visually-hidden" type="checkbox" name="places visited"
                       value="Devil's Bridge" checked>
                     <span class="form-list__mark checkbox-marker"></span>
-                    Мост Дьявола
+                    <p class="form-list__label-text">Мост Дьявола</p>
                   </label>
                 </li>
                 <li class="form-list__item form-list__item--checkbox">
@@ -138,7 +138,7 @@
                     <input class="form-list__control visually-hidden" type="checkbox" name="places visited"
                       value="The Bell Mountain" checked>
                     <span class="form-list__mark checkbox-marker"></span>
-                    Гора-Колокол
+                    <p class="form-list__label-text">Гора-Колокол</p>
                   </label>
                 </li>
                 <li class="form-list__item form-list__item--checkbox">
@@ -146,7 +146,7 @@
                     <input class="form-list__control visually-hidden" type="checkbox" name="places visited"
                       value="Slide Park" checked>
                     <span class="form-list__mark checkbox-marker"></span>
-                    Слайд-парк
+                    <p class="form-list__label-text">Слайд-парк</p>
                   </label>
                 </li>
                 <li class="form-list__item form-list__item--checkbox">
@@ -154,7 +154,7 @@
                     <input class="form-list__control visually-hidden" type="checkbox" name="places visited"
                       value="Red Rocks">
                     <span class="form-list__mark checkbox-marker"></span>
-                    Красные скалы
+                    <p class="form-list__label-text">Красные скалы</p>
                   </label>
                 </li>
               </ul>

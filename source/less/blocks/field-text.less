@@ -8,15 +8,19 @@
   width: 100%;
   border: none;
 
-  &:hover {
+  &:hover:not(:disabled) {
     background-color: #e5e5e5;
   }
 
   &:focus,
-  &:active {
+  &:active:not(:disabled) {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
     outline-offset: -4px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   &--phone {

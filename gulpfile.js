@@ -3,6 +3,7 @@ import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
+import htmlmin from 'gulp-htmlmin';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import autoprefixer from 'autoprefixer';
@@ -29,8 +30,9 @@ export const styles = () => {
 
 // html
 
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -60,7 +62,7 @@ const copyImages = () => {
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
-      webp: {}
+      webp: {quality:75}
     }))
     .pipe(gulp.dest('build/img'));
 }
@@ -160,10 +162,9 @@ export default gulp.series(
     scripts,
     svg,
     sprite,
-    // createWebp
+    createWebp
   ),
   gulp.series(
     server,
     watcher
   ));
-
