@@ -23,6 +23,11 @@
   opacity: 0.3;
 }
 
+.form-list__control:disabled ~ [class] {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .form-list__control[type="checkbox"]:checked + .checkbox-marker::before {
   content: "";
   position: absolute;
