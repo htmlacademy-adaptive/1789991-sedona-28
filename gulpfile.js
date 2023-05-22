@@ -115,6 +115,7 @@ const server = (done) => {
     cors: true,
     notify: false,
     ui: false,
+    browser: 'firefox'
   });
   done();
 }
