@@ -1,8 +1,10 @@
 .label-radio {
+  position: relative;
   display: flex;
-  gap: 16px;
-  margin: 0;
   align-items: center;
+  height: 46px;
+  margin: 0;
+  padding-left: 62px;
   text-transform: none;
   font-weight: 700;
   font-size: 18px;
@@ -10,29 +12,36 @@
   cursor: default;
 }
 
-.label-radio__mark {
-  display: block;
-  position: relative;
+.label-radio__text {
+  margin: 2px 0 0;
+  cursor: pointer;
+}
+
+.label-radio__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 50%;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
 }
 
-.label-radio__control:focus + .label-radio__mark {
+.label-radio__control:not(:disabled) + .label-radio__text:hover::before {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.label-radio__control:not(:disabled) + .label-radio__text:active::before {
+  background-color: #d5d5d5;
+}
+
+.label-radio__control:focus + .label-radio__text::before {
   outline: 2px solid #999595;
 }
 
-.label-radio__control:checked + .label-radio__mark::before {
+.label-radio__control:checked + .label-radio__text::after {
   content: "";
   position: absolute;
   width: 16px;
@@ -43,16 +52,11 @@
   left: 15px;
 }
 
-.label-radio:active .label-radio__mark::before {
+.label-radio__text:active::after {
   opacity: 0.3;
 }
 
 .label-radio__control:disabled ~ [class] {
   cursor: default;
   opacity: 0.3;
-}
-
-.label-radio__text {
-  margin: 4px 0 0;
-  cursor: pointer;
 }

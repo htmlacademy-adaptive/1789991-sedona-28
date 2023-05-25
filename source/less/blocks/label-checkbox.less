@@ -1,7 +1,9 @@
 .label-checkbox {
+  position: relative;
   display: flex;
-  gap: 16px;
+  height: 46px;
   margin: 0;
+  padding-left: 62px;
   align-items: center;
   text-transform: none;
   font-weight: 700;
@@ -10,29 +12,36 @@
   cursor: default;
 }
 
-.label-checkbox__mark {
-  display: inline-block;
-  position: relative;
+.label-checkbox__text {
+  margin: 4px 0 0;
+  cursor: pointer;
+}
+
+.label-checkbox__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
 }
 
-.label-checkbox__control:focus + .label-checkbox__mark {
+.label-checkbox__control:not(:disabled) + .label-checkbox__text:hover::before {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.label-checkbox__control:not(:disabled) + .label-checkbox__text:active::before {
+  background-color: #d5d5d5;
+}
+
+.label-checkbox__control:focus + .label-checkbox__text::before {
   outline: 2px solid #999595;
 }
 
-.label-checkbox__control[type="checkbox"]:checked + .label-checkbox__mark::before {
+.label-checkbox__control[type="checkbox"]:checked:not(:disabled) + .label-checkbox__text::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -43,16 +52,11 @@
   mask-image: url("../img/icons/tick-form.svg");
 }
 
-.label-checkbox:active .label-checkbox__mark::before {
+.label-checkbox__text:active::after {
   opacity: 0.3;
 }
 
 .label-checkbox__control:disabled ~ [class] {
-  opacity: 0.3;
+  opacity: 0.4;
   cursor: default;
-}
-
-.label-checkbox__text {
-  margin: 4px 0 0;
-  cursor: pointer;
 }
