@@ -34,8 +34,8 @@
 }
 
 .label-checkbox__control:not(:disabled) + .label-checkbox__text:active::before {
-    background-color: #d5d5d5;
-  }
+  background-color: #d5d5d5;
+}
 
 .label-checkbox__control:focus + .label-checkbox__text::before {
   outline: 2px solid #999595;
@@ -56,8 +56,7 @@
   opacity: 0.3;
 }
 
-.label-checkbox__control:disabled ~ [class^=label] {
-  opacity: 0.3;
+.label-checkbox__control:disabled ~ [class] {
+  opacity: 0.4;
   cursor: default;
 }
-
